@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sarah Mitchell - Clinical Psychologist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Dr. Sarah Mitchell</h2>
+                <span>Clinical Psychologist</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#approach" class="nav-link">Approach</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link cta-btn">Book Appointment</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Compassionate Care for Your 
+                    <span class="gradient-text">Mental Health Journey</span>
+                </h1>
+                <p class="hero-description">
+                    Licensed clinical psychologist specializing in anxiety, depression, trauma, and relationship therapy. 
+                    Take the first step towards healing and personal growth.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="openBookingModal()">
+                        <i class="fas fa-calendar-plus"></i>
+                        Schedule Consultation
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('about')">
+                        <i class="fas fa-user-md"></i>
+                        Learn More
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Clients Helped</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <i class="fas fa-heart"></i>
+                    <span>Compassionate Care</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Safe Environment</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-brain"></i>
+                    <span>Evidence-Based</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Dr. Sarah Mitchell</h2>
+                <p>Dedicated to providing personalized, evidence-based mental health care</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="credentials">
+                        <div class="credential">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Ph.D. Clinical Psychology</span>
+                        </div>
+                        <div class="credential">
+                            <i class="fas fa-certificate"></i>
+                            <span>Licensed Psychologist</span>
+                        </div>
+                        <div class="credential">
+                            <i class="fas fa-award"></i>
+                            <span>Board Certified</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Compassionate. Professional. Effective.</h3>
+                    <p>
+                        With over a decade of experience in clinical psychology, I am committed to helping individuals 
+                        navigate life's challenges and achieve lasting positive change. My approach combines evidence-based 
+                        therapeutic techniques with genuine compassion and understanding.
+                    </p>
+                    <p>
+                        I specialize in treating anxiety disorders, depression, trauma, and relationship issues. My goal 
+                        is to create a safe, non-judgmental space where you can explore your thoughts and feelings, 
+                        develop coping strategies, and work towards your personal goals.
+                    </p>
+                    <div class="specializations">
+                        <div class="spec-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Anxiety & Panic Disorders</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Depression & Mood Disorders</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Trauma & PTSD</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Relationship Counseling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Therapeutic Services</h2>
+                <p>Comprehensive mental health care tailored to your unique needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Individual Therapy</h3>
+                    <p>One-on-one sessions focused on your personal growth, healing, and goal achievement.</p>
+                    <ul class="service-features">
+                        <li>Cognitive Behavioral Therapy (CBT)</li>
+                        <li>Dialectical Behavior Therapy (DBT)</li>
+                        <li>Mindfulness-Based Approaches</li>
+                        <li>Trauma-Informed Care</li>
+                    </ul>
+                    <div class="service-price">Starting at $150/session</div>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Couples Therapy</h3>
+                    <p>Strengthen your relationship through improved communication and understanding.</p>
+                    <ul class="service-features">
+                        <li>Communication Skills Training</li>
+                        <li>Conflict Resolution</li>
+                        <li>Emotional Intelligence Building</li>
+                        <li>Relationship Strengthening</li>
+                    </ul>
+                    <div class="service-price">Starting at $200/session</div>
+                    <div class="popular-badge">Most Popular</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-family"></i>
+                    </div>
+                    <h3>Family Therapy</h3>
+                    <p>Address family dynamics and improve relationships within the family system.</p>
+                    <ul class="service-features">
+                        <li>Family Systems Therapy</li>
+                        <li>Adolescent Counseling</li>
+                        <li>Parent-Child Relationships</li>
+                        <li>Family Crisis Intervention</li>
+                    </ul>
+                    <div class="service-price">Starting at $180/session</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="approach">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Therapeutic Approach</h2>
+                <p>Evidence-based methods combined with personalized care</p>
+            </div>
+            <div class="approach-content">
+                <div class="approach-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Assessment & Understanding</h3>
+                            <p>We begin with a comprehensive assessment to understand your unique situation, goals, and challenges.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Personalized Treatment Plan</h3>
+                            <p>Together, we develop a tailored treatment plan that addresses your specific needs and preferences.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Active Therapy & Growth</h3>
+                            <p>Through regular sessions, we work together using proven therapeutic techniques to achieve your goals.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Progress & Maintenance</h3>
+                            <p>We monitor your progress and adjust our approach as needed, building skills for long-term success.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="approach-methods">
+                    <h3>Therapeutic Methods</h3>
+                    <div class="methods-grid">
+                        <div class="method">
+                            <i class="fas fa-brain"></i>
+                            <h4>Cognitive Behavioral Therapy</h4>
+                            <p>Evidence-based approach focusing on thoughts, feelings, and behaviors.</p>
+                        </div>
+                        <div class="method">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Mindfulness-Based Therapy</h4>
+                            <p>Incorporating mindfulness and meditation practices for present-moment awareness.</p>
+                        </div>
+                        <div class="method">
+                            <i class="fas fa-heart"></i>
+                            <h4>Emotionally Focused Therapy</h4>
+                            <p>Helping individuals and couples understand and express emotions effectively.</p>
+                        </div>
+                        <div class="method">
+                            <i class="fas fa-shield"></i>
+                            <h4>Trauma-Informed Care</h4>
+                            <p>Specialized approach for addressing trauma and its lasting effects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What My Clients Say</h2>
+                <p>Real experiences from people who have found healing and growth</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>
+                            "Dr. Mitchell helped me overcome years of anxiety and depression. Her compassionate approach 
+                            and practical tools have truly changed my life. I finally feel like myself again."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Jennifer M.</h4>
+                                <span>Individual Therapy Client</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>
+                            "My husband and I were on the brink of divorce when we started couples therapy with Dr. Mitchell. 
+                            She helped us rebuild our communication and trust. We're stronger than ever now."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Mark & Lisa T.</h4>
+                                <span>Couples Therapy Clients</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>
+                            "After struggling with trauma for years, I finally found the help I needed. Dr. Mitchell's 
+                            trauma-informed approach made me feel safe and supported throughout my healing journey."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>David R.</h4>
+                                <span>Trauma Therapy Client</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="control-btn prev-btn" onclick="changeTestimonial(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonial-dots">
+                    <span class="dot active" onclick="currentTestimonial(1)"></span>
+                    <span class="dot" onclick="currentTestimonial(2)"></span>
+                    <span class="dot" onclick="currentTestimonial(3)"></span>
+                </div>
+                <button class="control-btn next-btn" onclick="changeTestimonial(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to take the first step? I'm here to help you on your journey</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Office Location</h4>
+                            <p>123 Wellness Drive, Suite 200<br>Rock Hill, SC 29730</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(803) 555-0123</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@drsarahmitchell.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Office Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                               Saturday: 10:00 AM - 2:00 PM<br>
+                               Sunday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="emergency-info">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p><strong>Crisis Support:</strong> If you're experiencing a mental health emergency, 
+                           please call 988 (Suicide & Crisis Lifeline) or go to your nearest emergency room.</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">Phone Number (Optional)</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="individual">Individual Therapy</option>
+                                <option value="couples">Couples Therapy</option>
+                                <option value="family">Family Therapy</option>
+                                <option value="consultation">Initial Consultation</option>
+                            </select>
+                            <label for="service">Service Interest</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I consent to being contacted about my inquiry</label>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dr. Sarah Mitchell</h3>
+                    <p>Licensed Clinical Psychologist dedicated to helping you achieve mental wellness and personal growth.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Psychology Today"><i class="fas fa-user-md"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#approach">Approach</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Individual Therapy</a></li>
+                        <li><a href="#services">Couples Therapy</a></li>
+                        <li><a href="#services">Family Therapy</a></li>
+                        <li><a href="#services">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Wellness Drive, Suite 200<br>Rock Hill, SC 29730</p>
+                    <p><i class="fas fa-phone"></i> (803) 555-0123</p>
+                    <p><i class="fas fa-envelope"></i> hello@drsarahmitchell.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dr. Sarah Mitchell, Licensed Clinical Psychologist. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#" onclick="openPrivacyModal()">Privacy Policy</a>
+                    <a href="#" onclick="openTermsModal()">Terms of Service</a>
+                    <a href="#" onclick="openHipaaModal()">HIPAA Notice</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Schedule Your Appointment</h2>
+                <span class="close" onclick="closeBookingModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="booking-name" name="name" required>
+                            <label for="booking-name">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="booking-email" name="email" required>
+                            <label for="booking-email">Email</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="booking-phone" name="phone" required>
+                            <label for="booking-phone">Phone</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="booking-service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="individual">Individual Therapy</option>
+                                <option value="couples">Couples Therapy</option>
+                                <option value="family">Family Therapy</option>
+                                <option value="consultation">Initial Consultation</option>
+                            </select>
+                            <label for="booking-service">Service Type</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="date" id="booking-date" name="date" required>
+                            <label for="booking-date">Preferred Date</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="booking-time" name="time" required>
+                                <option value="">Select Time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                            </select>
+                            <label for="booking-time">Preferred Time</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="booking-notes" name="notes" rows="3"></textarea>
+                        <label for="booking-notes">Additional Notes (Optional)</label>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="booking-consent" name="consent" required>
+                        <label for="booking-consent">I understand this is a request and appointment confirmation will be sent separately</label>
+                    </div>
+                    <button type="submit" class="btn-primary">Request Appointment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Message Sent Successfully!</h2>
+            <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+            <button class="btn-primary" onclick="closeSuccessModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
